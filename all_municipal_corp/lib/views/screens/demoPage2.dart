@@ -18,8 +18,9 @@ class DemoPage2 extends StatelessWidget {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.symmetric(horizontal: 12),
         child: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: [
               Wrap(
@@ -37,7 +38,7 @@ class DemoPage2 extends StatelessWidget {
                         height: 230,
                         width: 191,
                         decoration: BoxDecoration(
-                          color: Colors.green.shade200,
+                          // color: Colors.green.shade200,
                           borderRadius: BorderRadius.circular(12),
                         ),
                         padding: const EdgeInsets.all(2),

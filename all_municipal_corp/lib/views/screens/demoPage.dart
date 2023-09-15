@@ -14,8 +14,9 @@ class DemoPage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(12),
+        padding: const EdgeInsets.symmetric(horizontal: 12),
         child: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: [
               Wrap(
@@ -33,7 +34,7 @@ class DemoPage extends StatelessWidget {
                         height: 190,
                         width: 191,
                         decoration: BoxDecoration(
-                          color: Colors.green.shade200,
+                          // color: Colors.green.shade200,
                           borderRadius: BorderRadius.circular(12),
                         ),
                         padding: const EdgeInsets.all(2),
@@ -43,8 +44,12 @@ class DemoPage extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               radius: 60,
-                              backgroundImage:
+                              foregroundImage:
                                   AssetImage(AllStates[index]["logo"]),
+                              child: Text(
+                                "${AllStates[index]["state"][0]}",
+                                style: const TextStyle(fontSize: 64),
+                              ),
                             ),
                             const SizedBox(
                               height: 6,

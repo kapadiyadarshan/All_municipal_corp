@@ -1,12 +1,17 @@
+import 'package:all_municipal_corp/controller/webPage_controller.dart';
 import 'package:all_municipal_corp/utils/routes_utils.dart';
 import 'package:all_municipal_corp/views/screens/demoPage.dart';
 import 'package:all_municipal_corp/views/screens/demoPage2.dart';
 import 'package:all_municipal_corp/views/screens/webViewPage.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    const MyApp(),
+    ChangeNotifierProvider(
+      create: (context) => WebPageController(),
+      child: const MyApp(),
+    ),
   );
 }
 
