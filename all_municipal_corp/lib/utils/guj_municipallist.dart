@@ -3,16 +3,79 @@ List<Map> AllStates = [
   {
     "id": "1",
     "state": "Andhra Pradesh",
-    "logo": "",
-    "allcities": [],
+    "logo": "asset/images/andhrapradesh/anantapur.jpeg",
+    "allcities": [
+      {
+        "id": "1",
+        "city": "Anantapur Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/anantapur.jpeg",
+        "url": "https://cdma.ap.gov.in/en/anantapur",
+      },
+      {
+        "id": "2",
+        "city": "Chittoor Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/chittoor.jpg",
+        "url": "https://cdma.ap.gov.in/en/about-chittoor-municipal-corporation",
+      },
+      {
+        "id": "3",
+        "city": "Eluru Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/eluru.jpeg",
+        "url":
+            "https://cdma.ap.gov.in/en/welcome-eluru-municipal-corporation-3",
+      },
+      {
+        "id": "4",
+        "city": "Visakhapatnam Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/visakhapatnam.png",
+        "url": "https://www.gvmc.gov.in/",
+      },
+      {
+        "id": "5",
+        "city": "Guntur Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/guntur.jpeg",
+        "url": "http://210.212.227.99/",
+      },
+      {
+        "id": "6",
+        "city": "Kadapa Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/kadapa.jpeg",
+        "url": "https://kadapa.ap.gov.in/municipal-corporation/",
+      },
+      {
+        "id": "7",
+        "city": "kakinada Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/kakinada.jpeg",
+        "url": "https://cdma.ap.gov.in/en/kakinada-municipal-corporation",
+      },
+      {
+        "id": "8",
+        "city": "Kurnool Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/kurnool.jpeg",
+        "url": "https://kurnool.ap.gov.in/municipal-corporation/",
+      },
+      {
+        "id": "9",
+        "city": "Machilipatnam Municipal Corporation",
+        "logo": "asset/images/andhrapradesh/machilipatnam.jpg",
+        "url": "https://cdma.ap.gov.in/node/222",
+      },
+    ],
   },
 
   //Arunachal Pradesh
   {
     "id": "2",
     "state": "Arunachal Pradesh",
-    "logo": "",
-    "allcities": [],
+    "logo": "asset/images/arunachalpradesh/itanagar.jpeg",
+    "allcities": [
+      {
+        "id": "1",
+        "city": "Itanagar Municipal Corporation",
+        "logo": "asset/images/arunachalpradesh/itanagar.jpeg",
+        "url": "https://imc.arunachal.gov.in/",
+      },
+    ],
   },
 
   //assam
@@ -348,8 +411,16 @@ List<Map> AllStates = [
   {
     "id": "22",
     "state": "Sikkim",
-    "logo": "",
-    "allcities": [],
+    "logo": "asset/images/sikkim/gangtok.jpg",
+    "allcities": [
+      {
+        "id": "1",
+        "city": "Gangtok Municipal Corporation",
+        "logo": "asset/images/sikkim/gangtok.jpg",
+        "url":
+            "https://sikkim.gov.in/departments/printing-stationery-department",
+      },
+    ],
   },
 
   //Tamilnadu
@@ -380,8 +451,46 @@ List<Map> AllStates = [
   {
     "id": "26",
     "state": "Uttar Pradesh",
-    "logo": "",
-    "allcities": [],
+    "logo": "asset/images/uttarpradesh/lucknow.jpeg",
+    "allcities": [
+      {
+        "id": "1",
+        "city": "Lucknow Municipal Corporation",
+        "logo": "asset/images/uttarpradesh/lucknow.jpeg",
+        "url": "https://lmc.up.nic.in/",
+      },
+      {
+        "id": "2",
+        "city": "Kanpur Municipal Corporation",
+        "logo": "asset/images/uttarpradesh/kanpur.jpeg",
+        "url": "https://kmc.up.nic.in/",
+      },
+      {
+        "id": "3",
+        "city": "Agra Municipal Corporation",
+        "logo": "asset/images/uttarpradesh/agra.jpg",
+        "url": "https://nagarnigamagra.com/",
+      },
+      {
+        "id": "4",
+        "city": "Ghaziabad Municipal Corporation",
+        "logo": "asset/images/uttarpradesh/ghaziabad.jpg",
+        "url": "https://www.ghaziabadnagarnigam.in/",
+      },
+      {
+        "id": "5",
+        "city": "Varanasi Municipal Corporation",
+        "logo": "asset/images/uttarpradesh/varanasi.jpeg",
+        "url":
+            "https://nnvns.org.in:449/nnvns/index.php?option=com_content&view=article&id=3&Itemid=&lang=en",
+      },
+      {
+        "id": "6",
+        "city": "Meerut Municipal Corporation",
+        "logo": "asset/images/uttarpradesh/meerut.jpeg",
+        "url": "http://www.meerutnagarnigam.com/main/",
+      },
+    ],
   },
 
   //Uttarakhand

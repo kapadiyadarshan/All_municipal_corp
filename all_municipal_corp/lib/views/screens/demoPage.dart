@@ -10,13 +10,13 @@ class DemoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Municipal Corporation"),
+        title: const Text("India State"),
         centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12),
         child: SingleChildScrollView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           child: Column(
             children: [
               Wrap(
@@ -32,32 +32,39 @@ class DemoPage extends StatelessWidget {
                     child: Card(
                       child: Container(
                         height: 190,
-                        width: 191,
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
-                          // color: Colors.green.shade200,
+                          gradient: const LinearGradient(
+                            colors: [
+                              Color(0xff8EC5FC),
+                              Color(0xffE0C3FC),
+                            ],
+                          ),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        padding: const EdgeInsets.all(2),
                         alignment: Alignment.center,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             CircleAvatar(
-                              radius: 60,
+                              radius: 70,
                               foregroundImage:
                                   AssetImage(AllStates[index]["logo"]),
                               child: Text(
                                 "${AllStates[index]["state"][0]}",
-                                style: const TextStyle(fontSize: 64),
+                                style: const TextStyle(
+                                  fontSize: 64,
+                                ),
                               ),
                             ),
                             const SizedBox(
-                              height: 6,
+                              width: 24,
                             ),
                             Text(
                               "${AllStates[index]["state"]}",
                               style: const TextStyle(
-                                fontSize: 16,
+                                fontSize: 20,
                                 fontWeight: FontWeight.bold,
                               ),
                               textAlign: TextAlign.center,

@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_inappwebview: ^5.7.2+3
   provider: any
+  carousel_slider: ^4.2.1
 
 
 dev_dependencies:
@@ -75,6 +76,10 @@ flutter:
     - asset/images/madhyapradesh/
     - asset/images/maharastra/
     - asset/images/rajasthan/
+    - asset/images/uttarpradesh/
+    - asset/images/andhrapradesh/
+    - asset/images/arunachalpradesh/
+    - asset/images/sikkim/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

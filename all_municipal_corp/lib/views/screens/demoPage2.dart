@@ -35,13 +35,19 @@ class DemoPage2 extends StatelessWidget {
                     },
                     child: Card(
                       child: Container(
-                        height: 230,
-                        width: 191,
+                        // height: 200,
+                        width: double.infinity,
                         decoration: BoxDecoration(
-                          // color: Colors.green.shade200,
+                          gradient: const LinearGradient(
+                            colors: [
+                              Color(0xff8EC5FC),
+                              Color(0xffE0C3FC),
+                            ],
+                            begin: Alignment(-1, -1),
+                          ),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        padding: const EdgeInsets.all(2),
+                        padding: const EdgeInsets.all(12),
                         alignment: Alignment.center,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -57,7 +63,7 @@ class DemoPage2 extends StatelessWidget {
                             Text(
                               "${cities[index]["city"]}",
                               style: const TextStyle(
-                                fontSize: 16,
+                                fontSize: 20,
                                 fontWeight: FontWeight.bold,
                               ),
                               textAlign: TextAlign.center,
